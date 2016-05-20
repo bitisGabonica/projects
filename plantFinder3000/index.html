@@ -1,38 +1,166 @@
 <!DOCTYPE html>
 <html>
 <title>PlantFinder3000</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>  makes things look bad-->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src ='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js'></script>
+
+
+</head>
+
 <body>
   <h1>PlantFinder 3000</h1>
   <p>Select the options below to find ideal edible plants for your garden!</p>
+
 <h3>Hardiness Zone</h3>
+
 <select id='climateZone'>
-  <option value="z3Select">3</option>
-  <option value="z4Select">4</option>
-  <option value="z5Select">5</option>
-  <option value="z6Select">6</option>
-  <option value="z7Select">7</option>
-  <option value="z8Select">8</option>
-  <option value="z9Select">9</option>
-  <option value="z10Select">10</option>
+  <option value="z3">3</option>
+  <option value="z4">4</option>
+  <option value="z5">5</option>
+  <option value="z6">6</option>
+  <option value="z7">7</option>
+  <option value="z8">8</option>
+  <option value="z9">9</option>
+  <option value="z10">10</option>
 </select>
+
+
 <h3>Soil Drainage</h3>
 <select id='soilDrainage'>
-  <option value='goodDrainageSelect'>Well-Drained</option>
-  <option value='poorDrainageSelect'>Poorly Drained</option>
-  <option value='unknownDrainageSelect'>Uncertain</option>
+  <option value='wellDrained'>Well-Drained</option>
+  <option value='poorlyDrained'>Poorly Drained</option>
+  <option value='Uncertain'>Uncertain</option>
 </select>
-<h3>Other Hardiness Values (optional)</h3>
-<form action="">
-<input type="checkbox" name="other" value="drought">Drought Tolerant<br>
-<input type='checkbox' name='other' value='heat'>Heat Tolerant<br>
-<input type='checkbox' name='other' value='cold'>Cold Tolerant<br>
-</form>
 
-<div id='sweetPotato' class="wellDrained", "drought", "heat", "z6", "z7","z8","z9">
-  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ipomoea_batatas_006.JPG/799px-Ipomoea_batatas_006.JPG'>
-  <p>Sweet Potato Facts</p>
+<h3>Other Hardiness Values (optional)</h3>
+
+<input type="checkbox" name="other" value="drought" class="plantbox">Drought Tolerant
+<input type='checkbox' name='other' value='heat' class="plantbox">Heat Tolerant
+<input type='checkbox' name='other' value='cold' class="plantbox">Cold Tolerant
+
+
+<div id='Go'><h2>Go!</h2></div>
+
+
+<div id='sweetPotato' class="plantdiv wellDrained drought heat z6 z7 z8 z9 veg">
+  <div class="ui-grid-b">
+    <div class="ui-block-a">
+  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ipomoea_batatas_006.JPG/799px-Ipomoea_batatas_006.JPG' width=250px height=200px>
+  <p>The sweet potato is a plant that produces large edible tubers underground and edible shoots above ground.</p>
+
+</div>
+<div class='ui-block-b'>
+  <p><b>Sweet Potato Facts</b></p>
+  <ul>
+    <li>Days to maturity: 90-100</li>
+    <li>Drought and heat tolerant, prefers well drained soil</li>
+    <li>Give little water a few weeks before harvest to prevent cracked tubers</li>
+</div>
+<div class='ui-block-c'>
+  <p><b>Resources</b><br>
+    <ul>
+<li></li>
+  <li></li>
+  <li></li>
+  </p>
+
+</div>
+</div>
 </div>
 
+<div id='cabbage' class="plantdiv poorlyDrained cold z3 z4 z5 z6 z7 z8 z9 veg">
+  <div class="ui-grid-b">
+    <div class="ui-block-a">
+  <img src='https://upload.wikimedia.org/wikipedia/commons/7/70/Cabbage.jpg' width=250px height=200px>
+  <p>Cabbage is a leafy vegetable that can produce multiple heads in a season. Resistant to frost.<br>
+  </p>
+
+</div>
+<div class='ui-block-b'>
+  <p><b>Cabbage Facts</b></p>
+  <ul>
+    <li>Days to maturity: 60-120</li>
+    <li>Adaptable to a wide range of conditions; shallow roots well suited for heavy soil</li>
+    <li>May bolt (go to seed) in hot weather; in hot climates, best grown in cooler months</li>
+    <li>To harvest, cut the head a couple inches above the stem; this will allow more heads to grow</li>
+</div>
+<div class='ui-block-c'>
+  <p><b>Resources</b><br>
+    <ul>
+<li>  <a href ="https://www.growveg.com/guides/growing-vegetables-in-clay-soil/">Growing Vegetables in Clay Soil</a></li>
+  <li><a href="http://www.weekendgardener.net/vegetables/cabbage.htm">Cabbage</a></li>
+  <li><a href="http://www.motherearthnews.com/organic-gardening/vegetables/growing-cabbage-zm0z12aszkon.aspx?PageId=1">Growing Cabbage</a></li>
+  </p>
+</div>
+</div>
+</div>
+
+<div id='taro' class="plantdiv poorlyDrained heat z8 z9 z10 veg">
+  <div class="ui-grid-b">
+    <div class="ui-block-a">
+  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/TaroAKL.jpg/800px-TaroAKL.jpg' width=150px height=200px>
+  <p>Originating in Southeast Asia, taro is a broad-leafed plant that produces edible tubers, leaves, and stems.<br>
+  </p>
+
+</div>
+<div class='ui-block-b'>
+  <p><b>Taro Facts</b></p>
+  <ul>
+    <li>Days to maturity: 200+ for tubers, shorter for leaves</li>
+    <li>Taro root contains oxalic acid, which can be neutralized by soaking and cooking, see resources for more info</li>
+    <li>Needs consistent heat and moisture to thrive; tubers require long growing season</li>
+  <li>A staple food for many cultures around the world, it is thought that taro has been cultivated for over 7,000 years</li>
+</div>
+<div class='ui-block-c'>
+    <p><b>Resources</b><br>
+      <ul>
+<li><a href ="http://www.harvesttotable.com/2007/04/taro_or_dasheen_tuber/">Taro or Dasheen Tuber</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Taro#Toxicity">Taro Toxicity</a></li>
+<li><a href="http://www.seriouseats.com/2010/10/seriously-asian-taro-root.html">Seriously Asian: Taro Root</a></li>
+<li><a href="http://www.harvesttotable.com/2010/03/taro/">How to Grow Taro</a></li>
+<a href="https://www.greenharvest.com.au/Plants/Information/Taro.html">Taro Growing Information</a></li>
+    </p>
+</div>
+</div>
+</div>
+
+<div id='potato' class="plantdiv wellDrained cold z3 z4 z5 z6 z7 z8 veg">
+  <div class="ui-grid-b">
+    <div class="ui-block-a">
+  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Patates.jpg/1024px-Patates.jpg' width=250px height=150px>
+  <p>Originally from the mountains of South America, potatoes are hardy plants that can thrive in poor soil, though well-drained sandy soil is preferred. While tubers are edible, stems and leaves are toxic.<br>
+  </p>
+
+</div>
+<div class='ui-block-b'>
+  <p><b>Potato Facts</b></p>
+  <ul>
+    <li>Days to maturity: 60-140, depending on variety (Early-, Mid-, or Late-Season)</li>
+    <li>Mounding dirt over the base of potato plants helps in growth</li>
+    <li>Needs regular watering to thrive (1 inch a week recommended)</li>
+    <li>There are innumerable varities of potatoes, from commonplace white baking potatoes to tiny blue potatoes! In South America,
+    there are even different species of potato cultivated.</li>
+
+</div>
+<div class='ui-block-c'>
+    <p><b>Resources</b><br>
+      <ul>
+<li><a href ="http://www.howdogardener.com/potatoes.html">Potatoes: A Complete Planting Guide</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Potato#Toxicity">Potato Toxicity</a></li>
+<li><a href="http://www.motherearthnews.com/organic-gardening/growing-potatoes-early-midseason-and-late-varieties-zmaz08djzgoe.aspx">All About Growing Potatoes: Early, Midseason and Late Varieties</a></li>
+<li><a href="http://www.rodalesorganiclife.com/garden/7-ways-grow-potatoes">7 Ways to Grow Potatoes</a></li>
+    </p>
+</div>
+</div>
+</div>
+
+<script src ='plantScript.js'></script>
 
 </body>
 </html>

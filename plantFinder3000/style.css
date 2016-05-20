@@ -1,4 +1,10 @@
-#sweetPotato {
+
+.plantdiv {
 display: none;
-background-color: #99ffbb;
+background-color: #4d9900;
+width:1000px;
+height: 300px;
+padding: 5px;
+margin: 10px;
+text-decoration: none;
 };
