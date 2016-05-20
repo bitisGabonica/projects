@@ -18,7 +18,7 @@
   <p>Select the options below to find ideal edible plants for your garden!</p>
 
 <h3>Hardiness Zone</h3>
-
+<h5><i><a href="http://planthardiness.ars.usda.gov/PHZMWeb/">Find your hardiness zone</a></i></h5>
 <select id='climateZone'>
   <option value="z3">3</option>
   <option value="z4">4</option>
@@ -35,20 +35,21 @@
 <select id='soilDrainage'>
   <option value='wellDrained'>Well-Drained</option>
   <option value='poorlyDrained'>Poorly Drained</option>
-  <option value='Uncertain'>Uncertain</option>
+  <option value='Uncertain/Raised'>Uncertain/Raised Bed</option>
 </select>
+<h3>Water Requirements (check any number)</h3>
+<input type="checkbox" name='water' value='highW' class="waterReq">High
+<input type='checkbox' name='water' value='modW' class="waterReq">Moderate
+<input type='checkbox' name='water' value='lowW' class="waterReq">Low
+<h3>Other Hardiness Values (check any number)</h3>
+<input type="checkbox" name="other" value="drought" class="plantbox" id='droughtTolerant'>Drought Tolerant
+<input type='checkbox' name='other' value='heat' class="plantbox" id='heatTolerant'>Heat Tolerant
+<input type='checkbox' name='other' value='cold' class="plantbox" id='coldTolerant'>Cold Tolerant
 
-<h3>Other Hardiness Values (optional)</h3>
-
-<input type="checkbox" name="other" value="drought" class="plantbox">Drought Tolerant
-<input type='checkbox' name='other' value='heat' class="plantbox">Heat Tolerant
-<input type='checkbox' name='other' value='cold' class="plantbox">Cold Tolerant
+ <div id='Go'><h2>Go!</h2></div>
 
 
-<div id='Go'><h2>Go!</h2></div>
-
-
-<div id='sweetPotato' class="plantdiv wellDrained drought heat z6 z7 z8 z9 veg">
+<div id='sweetPotato' class="plantdiv wellDrained drought heat z6 z7 z8 z9 lowW veg">
   <div class="ui-grid-b">
     <div class="ui-block-a">
   <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ipomoea_batatas_006.JPG/799px-Ipomoea_batatas_006.JPG' width=250px height=200px>
@@ -58,23 +59,25 @@
 <div class='ui-block-b'>
   <p><b>Sweet Potato Facts</b></p>
   <ul>
-    <li>Days to maturity: 90-100</li>
+    <li>Days to maturity: 90-170</li>
     <li>Drought and heat tolerant, prefers well drained soil</li>
     <li>Give little water a few weeks before harvest to prevent cracked tubers</li>
 </div>
 <div class='ui-block-c'>
   <p><b>Resources</b><br>
     <ul>
-<li></li>
-  <li></li>
-  <li></li>
+<li><a href="http://www.rodalesorganiclife.com/garden/grow-your-own-sweet-potatoes">Grow Your Own Sweet Potatoes!</a></li>
+  <li><a href="http://www.diynetwork.com/how-to/outdoors/gardening/how-to-plant-and-grow-sweet-potatoes">How to Plant and Grow Sweet Potatoes</a></li>
+  <li><a href="https://bonnieplants.com/growing/growing-sweet-potatoes/">Growing Sweet Potatoes</a></li>
+  <li><a href="http://garden.org/plantguide/?q=show&id=2125">Plant Care Guides: Sweet Potato</a><li>
+  </ul>
   </p>
 
 </div>
 </div>
 </div>
 
-<div id='cabbage' class="plantdiv poorlyDrained cold z3 z4 z5 z6 z7 z8 z9 veg">
+<div id='cabbage' class="plantdiv poorlyDrained cold z3 z4 z5 z6 z7 z8 z9 veg modW">
   <div class="ui-grid-b">
     <div class="ui-block-a">
   <img src='https://upload.wikimedia.org/wikipedia/commons/7/70/Cabbage.jpg' width=250px height=200px>
@@ -89,6 +92,7 @@
     <li>Adaptable to a wide range of conditions; shallow roots well suited for heavy soil</li>
     <li>May bolt (go to seed) in hot weather; in hot climates, best grown in cooler months</li>
     <li>To harvest, cut the head a couple inches above the stem; this will allow more heads to grow</li>
+  </ul>
 </div>
 <div class='ui-block-c'>
   <p><b>Resources</b><br>
@@ -96,12 +100,13 @@
 <li>  <a href ="https://www.growveg.com/guides/growing-vegetables-in-clay-soil/">Growing Vegetables in Clay Soil</a></li>
   <li><a href="http://www.weekendgardener.net/vegetables/cabbage.htm">Cabbage</a></li>
   <li><a href="http://www.motherearthnews.com/organic-gardening/vegetables/growing-cabbage-zm0z12aszkon.aspx?PageId=1">Growing Cabbage</a></li>
+</ul>
   </p>
 </div>
 </div>
 </div>
 
-<div id='taro' class="plantdiv poorlyDrained heat z8 z9 z10 veg">
+<div id='taro' class="plantdiv poorlyDrained heat z8 z9 z10 veg highW">
   <div class="ui-grid-b">
     <div class="ui-block-a">
   <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/TaroAKL.jpg/800px-TaroAKL.jpg' width=150px height=200px>
@@ -116,21 +121,23 @@
     <li>Taro root contains oxalic acid, which can be neutralized by soaking and cooking, see resources for more info</li>
     <li>Needs consistent heat and moisture to thrive; tubers require long growing season</li>
   <li>A staple food for many cultures around the world, it is thought that taro has been cultivated for over 7,000 years</li>
+</ul>
 </div>
 <div class='ui-block-c'>
     <p><b>Resources</b><br>
       <ul>
-<li><a href ="http://www.harvesttotable.com/2007/04/taro_or_dasheen_tuber/">Taro or Dasheen Tuber</a></li>
+<li><a href ="http://www.harvesttotable.com/2007/04/taro_or_dasheen_tuber/">Taro: Kitchen Basics</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Taro#Toxicity">Taro Toxicity</a></li>
 <li><a href="http://www.seriouseats.com/2010/10/seriously-asian-taro-root.html">Seriously Asian: Taro Root</a></li>
 <li><a href="http://www.harvesttotable.com/2010/03/taro/">How to Grow Taro</a></li>
-<a href="https://www.greenharvest.com.au/Plants/Information/Taro.html">Taro Growing Information</a></li>
+<li><a href="https://www.greenharvest.com.au/Plants/Information/Taro.html">Taro Growing Information</a></li>
+</ul>
     </p>
 </div>
 </div>
 </div>
 
-<div id='potato' class="plantdiv wellDrained cold z3 z4 z5 z6 z7 z8 veg">
+<div id='potato' class="plantdiv wellDrained cold z3 z4 z5 z6 z7 z8 veg highW modW">
   <div class="ui-grid-b">
     <div class="ui-block-a">
   <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Patates.jpg/1024px-Patates.jpg' width=250px height=150px>
@@ -146,7 +153,7 @@
     <li>Needs regular watering to thrive (1 inch a week recommended)</li>
     <li>There are innumerable varities of potatoes, from commonplace white baking potatoes to tiny blue potatoes! In South America,
     there are even different species of potato cultivated.</li>
-
+</ul>
 </div>
 <div class='ui-block-c'>
     <p><b>Resources</b><br>
@@ -155,6 +162,68 @@
 <li><a href="https://en.wikipedia.org/wiki/Potato#Toxicity">Potato Toxicity</a></li>
 <li><a href="http://www.motherearthnews.com/organic-gardening/growing-potatoes-early-midseason-and-late-varieties-zmaz08djzgoe.aspx">All About Growing Potatoes: Early, Midseason and Late Varieties</a></li>
 <li><a href="http://www.rodalesorganiclife.com/garden/7-ways-grow-potatoes">7 Ways to Grow Potatoes</a></li>
+</ul>
+    </p>
+</div>
+</div>
+</div>
+
+<div id='tomato' class="plantdiv wellDrained heat z3 z4 z5 z6 z7 z8 z9 z10 veg lowW modW">
+  <div class="ui-grid-b">
+    <div class="ui-block-a">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/NRCSHI07018_-_Hawaii_%28716072%29%28NRCS_Photo_Gallery%29.jpg/800px-NRCSHI07018_-_Hawaii_%28716072%29%28NRCS_Photo_Gallery%29.jpg" width=180 height=275></a>
+  <p>One of the most common garden vegetables, tomatoes come in many varieties and tolerate many conditions, though warm weather and well-drained soil is preferred.
+
+</div>
+<div class='ui-block-b'>
+  <p><b>Tomato Facts</b></p>
+  <ul>
+    <li>Days to maturity: 60-90</li>
+    <li>Tomatoes come in all shapes, sizes, and colors- from big beefsteak tomatoes, to tiny cherry tomatoes, and from red to yellow to orange to near black</li>
+    <li>The conditions in your area can influence they type of tomato plants you choose; if certain diseases are common in your area, look for varieties with specific disease resistance.
+      Early ripening varieties will be better for climates with short growing seasons.</li>
+    <li>Mounding dirt around the base of the tomato plants can help encourage strong growth</li>
+    <li>Tomatoes were once thought to be toxic, as they are a member of the nightshade family</li>
+</ul>
+</div>
+<div class='ui-block-c'>
+    <p><b>Resources</b><br>
+      <ul>
+<li><a href ="https://bonnieplants.com/growing/growing-tomatoes/">Growing Tomatoes</a></li>
+<li><a href="http://www.weekendgardener.net/vegetable-gardening-tips/growing-tomatoes-070707.htm">Growing Tomatoes and Tomato Growing Tips</a></li>
+<li><a href="https://www.gardeners.com/how-to/selecting-the-right-tomato-variety/5259.html">What Kind of Tomato Should I Grow?</a></li>
+<li><a href="http://www.almanac.com/plant/tomatoes">Growing Guides: Tomatoes</a></li>
+</ul>
+    </p>
+</div>
+</div>
+</div>
+
+<div id='dayLily' class="plantdiv wellDrained poorlyDrained cold heat z4 z5 z6 z7 z8 z9 veg lowW modW">
+  <div class="ui-grid-b">
+    <div class="ui-block-a">
+  <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Giglio_arancio.jpg/800px-Giglio_arancio.jpg"><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Giglio_arancio.jpg/800px-Giglio_arancio.jpg' width=250px height=200></a>
+  <p>A hardy plant from Asia, and common in gardens around the world, daylily flowers, flower buds, tubers, and early shoots are all edible.<br>
+  </p>
+
+</div>
+<div class='ui-block-b'>
+  <p><b>Daylily Facts</b></p>
+  <ul>
+    <li>This perennial plant produces flowers for several weeks in spring and summer</li>
+    <li>Flowers can be eaten raw or cooked. Tubers become unpalatable after the plant flowers.</li>
+    <li>Some people are sensitive to daylilies and ingestion can cause upset stomach. If you are unsure of your sensitivity, eat a small portion at first.</li>
+    <li>Not all kinds of lilies are edible, and some are toxic. Never eat a plant you can't identify.</li>
+</ul>
+</div>
+<div class='ui-block-c'>
+    <p><b>Resources</b><br>
+      <ul>
+<li><a href ="http://www.motherearthnews.com/organic-gardening/how-to-sustainably-harvest-daylilies-zbcz1307.aspx">How to Sustainably Harvest and Eat Delicious Daylilies</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Daylily#Uses">Daylilly Uses and Toxicity</a></li>
+<li><a href="http://garden.org/articles/articles.php?q=show&id=219&page=1">All-American Daylilies</a></li>
+<li><a href="http://honest-food.net/2010/06/29/dining-on-daylilies/">Dining on Daylilies</a></li>
+</ul>
     </p>
 </div>
 </div>
