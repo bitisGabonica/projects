@@ -10,11 +10,13 @@ console.log(soilDrainage);
 
 $('.plantdiv').each(function(){
 if ( ($(this).hasClass(hardinessVal) &&
+
 ($(this).hasClass(soilDrainage)|| soilDrainage === 'Uncertain/Raised')) &&
 //added this in to try to make the loop cycle through the checkboxes as well
-($("#droughtTolerant").is(':checked')))
+  ($("#droughtTolerant").is(':checked')&& $(this).hasClass('drought')))
 {
   $(this).show();
+  console.log('a ' + $(this).attr('id'));
 
 }
 //so if it doesnt return anything for 'droughtTolerant' it should run again and see if it finds a checked box for the other variables
@@ -24,7 +26,7 @@ else if ( ($(this).hasClass(hardinessVal) &&
 ($("#heatTolerant").is(':checked')))
 {
   $(this).show();
-
+  console.log('b ' + $(this).attr('id'));
 }
 
 else if ( ($(this).hasClass(hardinessVal) &&
@@ -32,13 +34,18 @@ else if ( ($(this).hasClass(hardinessVal) &&
 ($("#coldTolerant").is(':checked')))
 {
   $(this).show();
-
+  console.log('c ' + $(this).attr('id'));
 }
-else ( ($(this).hasClass(hardinessVal) &&
+else if( ($(this).hasClass(hardinessVal) &&
 ($(this).hasClass(soilDrainage)|| soilDrainage === 'Uncertain/Raised')))
 {
-  $(this).show();
-
-};
+  //$(this).show();
+  console.log('d ' + $(this).attr('id'));
+  console.log($("#droughtTolerant").is(':checked'));
+  console.log($(this));
+}
+else{
+  console.log('else');
+}
 });
 });

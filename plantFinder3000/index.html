@@ -4,7 +4,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
 <link rel="stylesheet" type="text/css" href="style.css">
 <!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>  makes things look bad-->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -42,9 +42,9 @@
 <input type='checkbox' name='water' value='modW' class="waterReq">Moderate
 <input type='checkbox' name='water' value='lowW' class="waterReq">Low
 <h3>Other Hardiness Values (check any number)</h3>
-<input type="checkbox" name="other" value="drought" class="plantbox" id='droughtTolerant'>Drought Tolerant
-<input type='checkbox' name='other' value='heat' class="plantbox" id='heatTolerant'>Heat Tolerant
-<input type='checkbox' name='other' value='cold' class="plantbox" id='coldTolerant'>Cold Tolerant
+<input type="radio" name="other" value="drought" class="plantbox" id='droughtTolerant'>Drought Tolerant
+<input type='radio' name='other' value='heat' class="plantbox" id='heatTolerant'>Heat Tolerant
+<input type='radio' name='other' value='cold' class="plantbox" id='coldTolerant'>Cold Tolerant
 
  <div id='Go'><h2>Go!</h2></div>
 
@@ -229,7 +229,7 @@
 </div>
 </div>
 
-<script src ='plantScript.js'></script>
+<script src ='secondaryPlantScript.js'></script>
 
 </body>
 </html>
