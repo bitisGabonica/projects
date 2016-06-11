@@ -9,6 +9,7 @@ var plantboxCheck = $('.plantbox').val();
 var droughtFlag = 0;
 var heatFlag=0;
 var coldFlag=0;
+var highWater=0;
 
 //the below is designed to show things if a certain checkbox is checked
 $('.plantdiv').each(function(){
