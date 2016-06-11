@@ -8,22 +8,32 @@ height: auto;
 padding: 20px;
 margin: 10px;
 text-decoration: none;
-};
+}
 .plantdiv img {
   border-radius: 3%;
 }
-#bodymain {
-  background-color: 'black';
-};
 
+#bodyWords {
+ width: 40%;
+ height: auto;
+ margin: auto;
+ padding-bottom: 10px;
+ padding-left: 15px;
+  background-color: rgba( 160, 236, 157, 0.6);
+}
+body {
+  background-image: url("http://res.publicdomainfiles.com/pdf_view/153/13986540622084.jpg");
+  width: 100%;
+  height: 100%;
+}
 .ui-block-c {
-  background-color: #fff;
-};
+  background-color: rgba( 160, 236, 157, 0.85);
+}
 
 button {
   border-radius: 20%;
-  background-color: #000;
+  background-color: #fff;
   font: #fff;
   padding-left: 50px;
   padding-right: 50px;
-};
+}
